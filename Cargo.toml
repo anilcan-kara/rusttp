@@ -1,0 +1,28 @@
+[package]
+name = "rusttp"
+version = "0.1.0"
+edition = "2024"
+authors = ["Anilcan Kara <anilcan@kara.dev>"]
+description = "A fast, user-friendly HTTP client for the terminal — httpie rewritten in Rust"
+license = "MIT"
+repository = "https://github.com/anilcan-kara/rusttp"
+keywords = ["http", "client", "cli", "curl", "httpie"]
+categories = ["command-line-utilities", "web-programming::http-client"]
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+reqwest = { version = "0.12", features = ["blocking", "json", "multipart", "cookies", "rustls-tls"], default-features = false }
+serde_json = "1.0"
+colored = "2.2"
+syntect = "5.2"
+base64 = "0.22"
+url = "2.5"
+mime_guess = "2.0"
+anyhow = "1.0"
+indicatif = "0.17"
+tokio = { version = "1", features = ["full"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
