@@ -14,9 +14,18 @@ A fast, user-friendly HTTP client for the terminal — httpie rewritten in Rust.
 
 ## Installation
 
+### 1. From Source (Cargo)
 ```bash
-cargo install --path .
+cargo install --git https://github.com/anilcan-kara/rusttp.git
 ```
+
+### 2. Direct Binary Download
+You can download the precompiled static binary for your platform directly from the GitHub Release assets:
+- 💻 **Windows (x64)**: [rusttp-win32-x64.exe](https://github.com/anilcan-kara/rusttp/releases/download/v0.1.1/rusttp-win32-x64.exe)
+- 🐧 **Linux (x64)**: [rusttp-linux-x64](https://github.com/anilcan-kara/rusttp/releases/download/v0.1.1/rusttp-linux-x64)
+- 🐧 **Linux (ARM64)**: [rusttp-linux-arm64](https://github.com/anilcan-kara/rusttp/releases/download/v0.1.1/rusttp-linux-arm64)
+- 🍎 **macOS (x64)**: [rusttp-darwin-x64](https://github.com/anilcan-kara/rusttp/releases/download/v0.1.1/rusttp-darwin-x64)
+- 🍎 **macOS (ARM64)**: [rusttp-darwin-arm64](https://github.com/anilcan-kara/rusttp/releases/download/v0.1.1/rusttp-darwin-arm64)
 
 ## Usage
 
